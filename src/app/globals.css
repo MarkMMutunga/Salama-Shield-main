@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'PT Sans', sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 40 50% 95%; /* Very light beige */
+    --foreground: 40 10% 20%; /* Dark warm gray */
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 40 10% 20%; /* Dark warm gray */
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 40 10% 20%; /* Dark warm gray */
+    --primary: 345 70% 90%; /* Soft Dusty Rose */
+    --primary-foreground: 345 30% 30%; /* Dark Rose */
+    --secondary: 40 30% 92%; /* Lighter beige */
+    --secondary-foreground: 40 10% 25%; /* Slightly darker warm gray */
+    --muted: 40 25% 90%; /* Muted beige */
+    --muted-foreground: 40 10% 45%; /* Medium warm gray */
+    --accent: 260 75% 92%; /* Soft Lavender */
+    --accent-foreground: 260 25% 35%; /* Dark Lavender */
+    --destructive: 0 70% 60%; /* Softer Red */
+    --destructive-foreground: 0 0% 98%; /* Light text on destructive */
+    --border: 40 20% 88%; /* Light beige-gray border */
+    --input: 40 20% 88%; /* Light beige-gray input */
+    --ring: 260 75% 92%; /* Soft Lavender for rings */
+    
+    --chart-1: 340 60% 70%; /* Deeper Dusty Rose */
+    --chart-2: 260 50% 75%; /* Muted Lavender */
+    --chart-3: 170 40% 70%; /* Soft Teal */
+    --chart-4: 30 70% 80%;  /* Warm Peach */
+    --chart-5: 50 60% 75%;  /* Muted Gold */
+    
+    --radius: 0.5rem;
+
+    /* Sidebar Light Theme */
+    --sidebar-background: 40 50% 97%; /* Very light beige, slightly off-white for sidebar */
+    --sidebar-foreground: 40 10% 30%; /* Dark warm gray for sidebar text */
+    --sidebar-primary: 345 70% 88%; /* Dusty Rose for sidebar primary actions */
+    --sidebar-primary-foreground: 345 30% 25%; /* Darker rose for text on sidebar primary */
+    --sidebar-accent: 260 75% 94%; /* Lighter Lavender for sidebar hover states */
+    --sidebar-accent-foreground: 260 25% 30%; /* Darker Lavender text for sidebar hover */
+    --sidebar-border: 40 30% 90%; /* Softer beige border for sidebar */
+    --sidebar-ring: 260 75% 90%; /* Lavender for sidebar ring */
+  }
+
+  .dark {
+    --background: 250 15% 18%; /* Dark cool lavender-gray */
+    --foreground: 40 30% 90%; /* Light warm beige text */
+    --card: 250 15% 22%; /* Slightly lighter dark cool gray */
+    --card-foreground: 40 30% 90%; /* Light warm beige text */
+    --popover: 250 15% 22%; /* Slightly lighter dark cool gray */
+    --popover-foreground: 40 30% 90%; /* Light warm beige text */
+    --primary: 345 60% 75%; /* Muted Rose for dark mode */
+    --primary-foreground: 345 80% 98%; /* Very light text on dark primary */
+    --secondary: 250 12% 28%; /* Darker gray */
+    --secondary-foreground: 40 25% 85%; /* Lighter warm beige */
+    --muted: 250 10% 32%; /* Even darker gray */
+    --muted-foreground: 40 20% 65%; /* Medium-light warm beige */
+    --accent: 260 60% 80%; /* Muted Lavender for dark mode */
+    --accent-foreground: 260 80% 98%; /* Very light text on dark accent */
+    --destructive: 0 65% 55%; /* Muted but clear red for dark */
+    --destructive-foreground: 0 0% 98%; /* Light text on dark destructive */
+    --border: 250 10% 35%; /* Dark gray border */
+    --input: 250 10% 35%; /* Dark gray input */
+    --ring: 260 60% 80%; /* Muted Lavender for rings in dark */
+
+    --chart-1: 340 70% 75%; /* Lighter Dusty Rose */
+    --chart-2: 260 60% 80%; /* Lighter Lavender */
+    --chart-3: 170 50% 65%; /* Muted Teal for dark */
+    --chart-4: 30 80% 75%;  /* Lighter Peach */
+    --chart-5: 50 70% 70%;  /* Lighter Gold */
+
+    /* Sidebar Dark Theme */
+    --sidebar-background: 250 15% 15%; /* Slightly darker than main dark bg for sidebar depth */
+    --sidebar-foreground: 40 30% 85%; /* Light warm beige text for sidebar */
+    --sidebar-primary: 345 60% 70%; /* Muted Rose for sidebar primary actions */
+    --sidebar-primary-foreground: 345 60% 95%; /* Light text for contrast on sidebar primary */
+    --sidebar-accent: 260 60% 75%; /* Muted Lavender for sidebar hover states */
+    --sidebar-accent-foreground: 260 60% 95%; /* Light text for contrast on sidebar hover */
+    --sidebar-border: 250 10% 30%; /* Consistent dark border for sidebar */
+    --sidebar-ring: 260 60% 75%; /* Lavender for sidebar ring */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
