@@ -270,7 +270,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - 📧 Email: [markmiki03@gmail.com](mailto:markmiki03@gmail.com)
 - 📱 Phone: +254 707 678 643
 - 🌍 Location: Kenya
-- 💼 Full-Stack Developer specializing in safety and security applications
+- 💼 Frontend Developer
 
 *Salama Shield was conceived and developed to address real-world safety challenges, particularly for vulnerable individuals who need discrete emergency response capabilities.*
 
